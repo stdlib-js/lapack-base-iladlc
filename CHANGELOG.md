@@ -22,6 +22,7 @@
 
 <details>
 
+-   [`be60b0a`](https://github.com/stdlib-js/stdlib/commit/be60b0a48997f93597eefcfea28c3a722a259035) - **test:** use `strictEqual` assertions _(by Athan Reines)_
 -   [`2fc9c1d`](https://github.com/stdlib-js/stdlib/commit/2fc9c1d68b420f4141189fe86685f47b93abeab8) - **docs:** fix copy _(by Athan Reines)_
 -   [`d844f8b`](https://github.com/stdlib-js/stdlib/commit/d844f8bdf3d6d6afd15768ba01f7c314203071ce) - **docs:** fix missing parameter _(by Athan Reines)_
 -   [`e93b8b9`](https://github.com/stdlib-js/stdlib/commit/e93b8b9f50227aa7b0d836bf1bb107b8efa82340) - **bench:** fix description _(by Athan Reines)_
