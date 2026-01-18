@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-12-18)
+## Unreleased (2026-01-18)
 
 <section class="features">
 
@@ -15,6 +15,16 @@
 </section>
 
 <!-- /.features -->
+
+<section class="bug-fixes">
+
+### Bug Fixes
+
+-   [`5b1c0fd`](https://github.com/stdlib-js/stdlib/commit/5b1c0fd3f21b52b9cf1a791ab74367a08e79b2c8) - add missing exports comments
+
+</section>
+
+<!-- /.bug-fixes -->
 
 <section class="issues">
 
@@ -34,6 +44,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`5b1c0fd`](https://github.com/stdlib-js/stdlib/commit/5b1c0fd3f21b52b9cf1a791ab74367a08e79b2c8) - **fix:** add missing exports comments _(by Philipp Burckhardt)_
 -   [`fd894a1`](https://github.com/stdlib-js/stdlib/commit/fd894a1a42d580d0ad12ae53ab9596cc44ee1870) - **docs:** fix broken Markdown link [(#9163)](https://github.com/stdlib-js/stdlib/pull/9163) _(by Sujal charati)_
 -   [`905019c`](https://github.com/stdlib-js/stdlib/commit/905019c024611308865950e3d1dd51c642176e82) - **docs:** fix grammar in function descriptions _(by Philipp Burckhardt)_
 -   [`be60b0a`](https://github.com/stdlib-js/stdlib/commit/be60b0a48997f93597eefcfea28c3a722a259035) - **test:** use `strictEqual` assertions _(by Athan Reines)_
