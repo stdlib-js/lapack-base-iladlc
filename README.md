@@ -35,14 +35,32 @@ limitations under the License.
 
 > Find the index of the last non-zero column in a matrix `A`.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/lapack-base-iladlc
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import iladlc from 'https://cdn.jsdelivr.net/gh/stdlib-js/lapack-base-iladlc@esm/index.mjs';
+var iladlc = require( '@stdlib/lapack-base-iladlc' );
 ```
 
 #### iladlc( order, M, N, A, LDA )
@@ -50,7 +68,7 @@ import iladlc from 'https://cdn.jsdelivr.net/gh/stdlib-js/lapack-base-iladlc@esm
 Returns the index of the last non-zero column in a matrix `A`.
 
 ```javascript
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@esm/index.mjs';
+var Float64Array = require( '@stdlib/array-float64' );
 
 var A = new Float64Array( [ 1.0, 2.0, 0.0, 3.0, 4.0, 0.0 ] );
 
@@ -78,7 +96,7 @@ Note that indexing is relative to the first index. To introduce an offset, use [
 <!-- eslint-disable stdlib/capitalized-comments -->
 
 ```javascript
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@esm/index.mjs';
+var Float64Array = require( '@stdlib/array-float64' );
 
 // Initial array:
 var A0 = new Float64Array( [ 9999.0, 1.0, 2.0, 0.0, 3.0, 4.0, 0.0 ] );
@@ -95,7 +113,7 @@ var out = iladlc( 'row-major', 2, 3, A1, 3 );
 Returns the index of the last non-zero column in a matrix `A` using alternative indexing semantics.
 
 ```javascript
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@esm/index.mjs';
+var Float64Array = require( '@stdlib/array-float64' );
 
 var A = new Float64Array( [ 1.0, 2.0, 0.0, 3.0, 4.0, 0.0 ] );
 
@@ -122,7 +140,7 @@ The function has the following parameters:
 While [`typed array`][mdn-typed-array] views mandate a view offset based on the underlying buffer, the offset parameter supports indexing semantics based on a starting index. For example,
 
 ```javascript
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@esm/index.mjs';
+var Float64Array = require( '@stdlib/array-float64' );
 
 var A = new Float64Array( [ 9999.0, 1.0, 2.0, 0.0, 3.0, 4.0, 0.0 ] );
 
@@ -158,16 +176,11 @@ var out = iladlc.ndarray( 2, 3, A, 3, 1, 1 );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import ndarray2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-to-array@esm/index.mjs';
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@esm/index.mjs';
-import shape2strides from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-shape2strides@esm/index.mjs';
-import iladlc from 'https://cdn.jsdelivr.net/gh/stdlib-js/lapack-base-iladlc@esm/index.mjs';
+```javascript
+var ndarray2array = require( '@stdlib/ndarray-base-to-array' );
+var Float64Array = require( '@stdlib/array-float64' );
+var shape2strides = require( '@stdlib/ndarray-base-shape2strides' );
+var iladlc = require( '@stdlib/lapack-base-iladlc' );
 
 var shape = [ 3, 3 ];
 var order = 'row-major';
@@ -178,10 +191,6 @@ console.log( ndarray2array( A, shape, strides, 0, order ) );
 
 var out = iladlc( order, shape[ 0 ], shape[ 1 ], A, strides[ 0 ] );
 console.log( out );
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -190,7 +199,73 @@ console.log( out );
 
 <!-- C interface documentation. -->
 
+* * *
 
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+TODO
+```
+
+#### TODO
+
+TODO.
+
+```c
+TODO
+```
+
+TODO
+
+```c
+TODO
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+TODO
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
@@ -209,7 +284,7 @@ console.log( out );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -226,7 +301,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -252,8 +327,8 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 -->
 
-[chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
+[chat-image]: https://img.shields.io/badge/zulip-join_chat-brightgreen.svg
+[chat-url]: https://stdlib.zulipchat.com
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
