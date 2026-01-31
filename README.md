@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import iladlc from 'https://cdn.jsdelivr.net/gh/stdlib-js/lapack-base-iladlc@deno/mod.js';
+import iladlc from 'https://cdn.jsdelivr.net/gh/stdlib-js/lapack-base-iladlc@v0.1.0-deno/mod.js';
 ```
 
 #### iladlc( order, M, N, A, LDA )
@@ -162,7 +162,7 @@ var out = iladlc.ndarray( 2, 3, A, 3, 1, 1 );
 import ndarray2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-to-array@deno/mod.js';
 import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
 import shape2strides from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-shape2strides@deno/mod.js';
-import iladlc from 'https://cdn.jsdelivr.net/gh/stdlib-js/lapack-base-iladlc@deno/mod.js';
+import iladlc from 'https://cdn.jsdelivr.net/gh/stdlib-js/lapack-base-iladlc@v0.1.0-deno/mod.js';
 
 var shape = [ 3, 3 ];
 var order = 'row-major';
