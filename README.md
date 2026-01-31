@@ -44,6 +44,11 @@ limitations under the License.
 To use in Observable,
 
 ```javascript
+iladlc = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/lapack-base-iladlc@umd/browser.js' )
+```
+The previous example will load the latest bundled code from the umd branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/lapack-base-iladlc/tags). For example,
+
+```javascript
 iladlc = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/lapack-base-iladlc@v0.1.0-umd/browser.js' )
 ```
 
@@ -56,7 +61,7 @@ var iladlc = require( 'path/to/vendor/umd/lapack-base-iladlc/index.js' )
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/lapack-base-iladlc@v0.1.0-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/lapack-base-iladlc@umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -189,7 +194,7 @@ var out = iladlc.ndarray( 2, 3, A, 3, 1, 1 );
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-to-array@umd/browser.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@umd/browser.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-shape2strides@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/lapack-base-iladlc@v0.1.0-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/lapack-base-iladlc@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
