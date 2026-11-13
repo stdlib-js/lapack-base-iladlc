@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-10-24)
+## Unreleased (2026-11-13)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`78ad2fa`](https://github.com/stdlib-js/stdlib/commit/78ad2fa5dbb12ce808dec93197d5343745ff91b8) - **docs:** normalize trailing newlines in REPL help texts [(#16420)](https://github.com/stdlib-js/stdlib/pull/16420) _(by Philipp Burckhardt)_
 -   [`28a3ebe`](https://github.com/stdlib-js/stdlib/commit/28a3ebeb8860701c68a7e9fe0416daabb7046a1b) - **docs:** update parameter types [(#16220)](https://github.com/stdlib-js/stdlib/pull/16220) _(by Philipp Burckhardt)_
 -   [`1625581`](https://github.com/stdlib-js/stdlib/commit/162558107026b743bb22b09701ab62f601e7058f) - **docs:** fix examples in `lapack/base` [(#12671)](https://github.com/stdlib-js/stdlib/pull/12671) _(by Philipp Burckhardt)_
 -   [`b9dbd3e`](https://github.com/stdlib-js/stdlib/commit/b9dbd3e3105c2449bb1f6b95f8c442bbb5b14552) - **chore:** remove misspelled keyword [(#12368)](https://github.com/stdlib-js/stdlib/pull/12368) _(by Philipp Burckhardt)_
